@@ -6,7 +6,7 @@ export const Header = () => {
     <header className={css.header}>
       <nav className={css.nav}>
         <Link to="/home" className={css.logo}>
-          <img className="animate__animated animate__fadeInRightBig animate__delay-1s" src="/img/logo.jpg" alt="Mgdevelopment Logo" style={{ height: '40px' }} />
+          <img className="animate__animated animate__fadeInRightBig animate__delay-1s" src="img/logo.jpg" alt="Mgdevelopment Logo" style={{ height: '40px' }} />
           <span className={css.logoText}>Mgdevelopment</span>
         </Link>
         <NavLink to="/home" className={({ isActive }) => `${css.headerNavLink} ${isActive ? css.active : ''}`}>
