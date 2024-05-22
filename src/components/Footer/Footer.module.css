@@ -3,8 +3,23 @@
   font-weight: 700;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  gap: 6px;
 }
 
 .footerText {
   text-align: center;
+  font-weight: 600;
+}
+
+.footerLink {
+  text-decoration: underline;
+  font-weight: 600;
+  color: var(--blue-color);
+  transition: color var(--transition);
+}
+
+.footerLink:hover,
+.footerLink:focus {
+  color: var(--green-color);
 }

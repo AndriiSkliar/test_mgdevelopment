@@ -1,12 +1,72 @@
+.header {
+  padding: 20px;
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
 .logo {
   display: flex;
   align-items: center;
-  /* flex-basis: 20%; */
+  flex-basis: 25%;
+  gap: 5px;
 }
 
 .logoText {
   text-transform: uppercase;
-  /* color: var(--accent-color); */
-  font-weight: 700;
-  font-size: 20px;
+  font-weight: 600;
+}
+
+.headerNavLink {
+  flex-basis: 50%;
+  text-align: center;
+  transition: color var(--transition);
+}
+
+.headerNavLink .headerNavSpan:hover,
+.headerNavLink .headerNavSpan:focus,
+.logoText:hover,
+.logoText:focus {
+  color: var(--blue-color);
+}
+
+.headerNavLink.active .headerNavSpan {
+  border-bottom: 2px solid var(--blue-color);
+  padding-bottom: 5px;
+}
+
+.headerNavSpan,
+.logoText {
+  transition: color var(--transition);
+}
+
+.empty {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .headerNavLink {
+    text-align: right;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .empty {
+    display: block;
+    flex-basis: 25%;
+  }
 }

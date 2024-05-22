@@ -1,0 +1,27 @@
+.cardsSection {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title {
+  font-weight: 600;
+  text-align: center;
+  font-size: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .cardsSection {
+    padding: 20px;
+  }
+  .title {
+    text-align: start;
+    padding-left: 30px;
+  }
+}

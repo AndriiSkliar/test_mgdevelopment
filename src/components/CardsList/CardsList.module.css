@@ -1,0 +1,23 @@
+.cardsList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .cardsList {
+    padding: 30px;
+  }
+  .cardsItem {
+    width: calc((100% - 24px) / 2);
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .cardsItem {
+    width: calc((100% - 24px * 2) / 3);
+    height: auto;
+  }
+}
