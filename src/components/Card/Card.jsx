@@ -32,7 +32,7 @@ export const Card = ({ title, description, color, spriteImage }) => {
 
   return (
     <div className={css.cardContainer} style={cardStyle}>
-        <svg className={css.svg} style={svgStyle}>
+        <svg className={css.svg} style={svgStyle} aria-label='service icon'>
             <use className={css.svgIcon} href={`${sprite}#${spriteImage}`}></use>
         </svg>
         <h2 className={css.title}>{title}</h2>
