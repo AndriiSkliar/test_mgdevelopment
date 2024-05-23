@@ -1,6 +1,6 @@
 import { nanoid } from 'nanoid';
 import css from './Card.module.css';
-import sprite from '../../assets/sprite.svg';
+import sprite from '../../assets/icons/sprite.svg';
 
 export const Card = ({ title, description, color, spriteImage }) => {
     let cssVariableName;
